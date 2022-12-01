@@ -1,5 +1,6 @@
-FROM quay.io/thoth-station/s2i-lab-elyra:v0.0.13
+FROM quay.io/thoth-station/s2i-lab-elyra:v0.1.5
 
-# Leaving as no-op until I verify image build pipeline is working
 USER root
-RUN dnf -y install libpng zlib freetype-devel cmake freetype qt5-srpm-macros
+RUN dnf install -y https://dl.fedoraproject.org/pub/epel/epel-release-latest-8.noarch.rpm
+RUN dnf install -y python3-pip python3-tkinter udunits2-devel proj-devel geos-devel
+RUN pip3 install scitools-iris

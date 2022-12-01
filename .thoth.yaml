@@ -24,6 +24,7 @@ managers:
         - idemir-ids
         - erikerlandson
         - harshad16
+        - mightynerderic
       assignees:
         - sesheta
       labels: [bot]
